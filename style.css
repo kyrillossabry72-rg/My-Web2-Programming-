@@ -1,0 +1,233 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    /* background-image: url(images/IMG-20261026-WA0019.jpg); */
+    background-size: contain;
+    background-attachment: fixed;
+    color: #12345a;
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    background-color: white;
+   
+}
+
+header {
+    margin: 20px 20px 0;
+    background: linear-gradient(
+        110deg,
+        #08366f,
+        #0757b8,
+        #087cff
+    );
+    color: white;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    gap: 20px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+ul a {
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+ul a:hover {
+    color: #ffd84d;
+}
+
+.link{
+    display: inline-block;
+    background-color: #ffd84d;
+    color: #17345b;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link{
+    background-color: #ffe578;
+}
+.link:hover{
+    background-color: aqua;
+    color: #ffd84d;
+    width: 150px;
+}
+.parent{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 35px;
+    min-height: 350px;
+
+}
+.contant h1 {
+    font-size: 38px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: #087cff;
+}
+
+.contant p {
+    color: #e2edff;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 400px;
+    
+}
+
+.imgaine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      animation-name: kero;
+    animation-duration: 2s;
+    /* border-radius: 50%; */
+    animation-iteration-count: infinite;
+}
+@keyframes kero{
+    from{
+     background-color: #ffd84d;
+    }
+    to{
+    background-color: #08366f;
+    }
+}
+.imgaine img {
+   
+    display: block;
+    width: 100%;
+    height: 260px;
+    border-radius: 15px;
+}
+
+#parent{
+    display: flex;
+    width: 1100px;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    border: 1px black;
+
+
+}
+.img1{
+    width: 100%;
+    background-image: url(images/IMG-20261026-WA0019.jpg);
+    background-size: contain;
+    height: 150px;
+}
+
+.img2{
+    width: 100%;
+    background-image: url(images/IMG-20261026-WA0023.jpg);
+    background-size: contain;
+    height: 150px;
+}
+.img3{
+    width: 100%;
+    background-image: url(images/IMG-20261026-WA0021.jpg);
+    background-size: contain;
+    height: 150px;
+}
+.child{
+    border: black 3px solid;
+}
+
+
+.child h2{
+    font-size: 30px;
+    color: #0757b8;
+    padding: 10px;
+}
+.child p{
+    font-size: 15px;
+    color: #08366f;
+    padding: 10px;
+}
+
+ .child button{
+    background-color: #087cff;
+     padding: 10px;
+    font-size: 15px;
+    color: white;
+
+}
+.child button:hover{
+    background-color: #ffd84d;
+    width: 150px;
+
+}
+a{
+    color: white;
+}
+ h1{
+    text-align: center;
+    margin: 15px;
+}
+.contant h1{
+    transition: all 2s;
+}
+.contant h1:hover{
+    color: aquamarine;
+}
+#parent .child{
+    transition: transform ,2s ;
+
+}
+#parent .child:active{
+    transform: translatex(100px);
+}
+#parent .child{
+    animation-name: koko;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes koko{
+    0%{
+        background-color: rgb(138, 102, 102);
+    }
+    100%{
+        background-color: rgb(37, 37, 35);
+    }
+}    
+.child p{
+    color: white;
+}
